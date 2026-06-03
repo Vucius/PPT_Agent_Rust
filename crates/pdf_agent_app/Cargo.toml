@@ -6,3 +6,17 @@ edition = "2021"
 [dependencies]
 pdf_agent_core = { path = "../pdf_agent_core" }
 pdf_agent_storage = { path = "../pdf_agent_storage" }
+pdf_agent_pdf = { path = "../pdf_agent_pdf" }
+pdf_agent_inference = { path = "../pdf_agent_inference" }
+pdf_agent_llm = { path = "../pdf_agent_llm" }
+
+iced = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }
+rfd = { workspace = true }
+similar = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+async-stream = { workspace = true }
+

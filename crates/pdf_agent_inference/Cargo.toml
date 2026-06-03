@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+pdf_agent_core = { path = "../pdf_agent_core" }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+
+

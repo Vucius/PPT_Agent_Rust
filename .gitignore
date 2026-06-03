@@ -1,7 +1,56 @@
+# ===== Rust / Cargo =====
 /target
-Cargo.lock
 **/*.rs.bk
+Cargo.lock
+
+# ===== ONNX / ML Models =====
+# 模型文件体积大，不提交到 Git
+models/**/*.onnx
+models/**/*.bin
+models/**/*.pt
+models/**/*.pth
+models/**/*.safetensors
+*.onnx
+*.ort
+
+# ===== SQLite =====
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ===== Logs =====
 *.log
+logs/
+
+# ===== OS =====
 .DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+ehthumbs_vista.db
+
+# ===== IDE / Editor =====
 .idea/
 .vscode/
+*.swp
+*.swo
+*~
+.vs/
+
+# ===== Environment =====
+.env
+.env.*
+!.env.example
+
+# ===== PDF test outputs =====
+output/
+tmp/
+*.tmp
+
+# ===== PDFium dynamic library =====
+# pdfium-render 下载的动态库不提交
+pdfium.dll
+libpdfium.so
+libpdfium.dylib

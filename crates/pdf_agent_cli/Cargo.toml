@@ -5,3 +5,9 @@ edition = "2021"
 
 [dependencies]
 pdf_agent_core = { path = "../pdf_agent_core" }
+pdf_agent_pdf = { path = "../pdf_agent_pdf" }
+pdf_agent_inference = { path = "../pdf_agent_inference" }
+clap = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+

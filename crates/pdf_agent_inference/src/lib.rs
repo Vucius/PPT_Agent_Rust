@@ -1,1 +1,3 @@
-// pdf_agent_inference library entrypoint
+pub mod predictors;
+
+pub use predictors::{LayoutPredictor, OcrPredictor};

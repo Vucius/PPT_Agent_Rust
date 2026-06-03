@@ -104,7 +104,7 @@ This repository contains a high-performance, low-memory PDF document parsing and
 
 - `Cargo.toml`: Cargo workspace configuration.
 - `README.md`: User-facing overview.
-- `init.md`: Technical architecture outline.
+- `execution_plan.md`: Technical architecture and UI/UX execution plan.
 - `marker_analysis.md`: In-depth analysis of the Marker Python architecture.
 - `AGENTS.md`: Agent workspace context and rules (this file).
 

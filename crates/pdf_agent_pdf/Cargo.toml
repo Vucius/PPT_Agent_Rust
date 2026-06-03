@@ -4,3 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+pdf_agent_core = { path = "../pdf_agent_core" }
+lopdf = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+pdfium-render = { workspace = true }
+image = { workspace = true }
+
+
