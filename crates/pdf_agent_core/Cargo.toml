@@ -1,0 +1,9 @@
+[package]
+name = "pdf_agent_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pdf_agent_pdf = { path = "../pdf_agent_pdf" }
+pdf_agent_inference = { path = "../pdf_agent_inference" }
+pdf_agent_llm = { path = "../pdf_agent_llm" }

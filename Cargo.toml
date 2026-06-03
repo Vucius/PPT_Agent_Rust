@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/pdf_agent_app",
+    "crates/pdf_agent_core",
+    "crates/pdf_agent_pdf",
+    "crates/pdf_agent_inference",
+    "crates/pdf_agent_llm",
+    "crates/pdf_agent_storage",
+    "crates/pdf_agent_cli",
+]
