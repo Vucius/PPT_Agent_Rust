@@ -20,12 +20,27 @@ pub struct PdfConverter {
 
 impl PdfConverter {
     pub fn new() -> Self {
+use crate::processors::order_processor::OrderProcessor;
+use crate::processors::equation_processor::EquationProcessor;
+use crate::processors::block_relabel_processor::BlockRelabelProcessor;
+use crate::processors::table_merge_processor::TableMergeProcessor;
+use crate::processors::toc_processor::TocProcessor;
+use crate::processors::llm_simple_meta_processor::LlmSimpleMetaProcessor;
+use crate::processors::debug_processor::DebugProcessor;
+
         Self {
             processors: vec![
+                Box::new(DebugProcessor), // Placed first for initial state debugging if desired, or could be last. Let's put one here.
+                Box::new(OrderProcessor),
+                Box::new(TableMergeProcessor),
                 Box::new(TableProcessor),
                 Box::new(HeadingProcessor),
+                Box::new(TocProcessor),
+                Box::new(EquationProcessor),
                 Box::new(ListProcessor),
                 Box::new(LineMergeProcessor),
+                Box::new(BlockRelabelProcessor),
+                Box::new(LlmSimpleMetaProcessor),
             ],
         }
     }

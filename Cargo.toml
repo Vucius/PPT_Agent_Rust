@@ -27,4 +27,5 @@ similar = "2.4"
 async-stream = "0.3"
 pdfium-render = "0.8"
 image = "0.24"
+opener = "0.7"
 

@@ -43,4 +43,7 @@ pub enum Message {
     LlmKeyChanged(String),
     LlmLimitChanged(String),
     SaveSettingsClicked,
+    ExportMarkdownClicked,
+    ExportJsonClicked,
+    ExportCompleted(Result<String, String>),
 }
